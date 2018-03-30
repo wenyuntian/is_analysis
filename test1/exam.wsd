@@ -1,0 +1,24 @@
+@startuml
+start
+:教务处安排考试;
+:教师出卷;
+while (教务处审核试卷) is (没有通过)
+  :教师修改试卷;
+endwhile (通过)
+:印刷试卷;
+:学生参加考试;
+:考试结束回收试卷;
+:组织教师阅卷;
+fork
+  :教务处统计成绩;
+  :公布学生成绩;
+  if( 是否有不及格考生？) then( 有 )
+    :安排补考;
+  else( 没有 )
+  endif
+fork again
+  :试卷存档;
+endfork
+:考试结束;
+stop
+@enduml

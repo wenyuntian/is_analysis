@@ -40,7 +40,7 @@ rectangle 图书管理借阅系统 {
 @enduml
 ```
 ### 1.2. 用例图如下：
-![用例图](./exam/exam.png)
+![用例图](./out/library/library.png)
 
 2.参与者说明：
 ### 2.1 图书管理员

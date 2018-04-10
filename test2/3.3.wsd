@@ -1,0 +1,20 @@
+@startuml
+|借阅者|
+start
+:查询书籍信息;
+	|系统|
+	if( 是否可借？) then( 是 )
+        if(是否登录？) then(否)
+        : 用户登录;
+        else(是)
+        endif
+    :借书成功;
+    else( 不能 )
+    :借书失败;
+    endif
+:返回借阅结果;
+|借阅者|
+:显示借阅结果;
+
+stop
+@enduml

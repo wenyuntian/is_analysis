@@ -1,0 +1,30 @@
+@startuml
+
+left to right direction
+skinparam packageStyle rectangle
+
+:管理员: as administrator 
+:游客: as tourist 
+:借阅者: as borrower 
+
+rectangle 图书管理借阅系统 {
+  administrator --> (图书管理)
+  administrator --> (借阅管理)
+  
+  borrower --> (借阅书籍)
+  borrower --> (归还书籍)
+  borrower -> (取消预订)
+  borrower -> (预订书籍)
+  borrower -> (查询借阅情况)
+  tourist -> (查询书籍)
+  
+  (取消预订) .> (预订书籍) : extends
+  (借阅书籍) .> (归还书籍) : extends
+
+  (图书管理) <.. (新增书籍) : include
+  (图书管理) <.. (删除书籍) : include
+  (图书管理) <.. (修改书籍) : include
+  tourist <|- borrower
+}
+
+@enduml

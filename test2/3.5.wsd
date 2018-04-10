@@ -1,0 +1,14 @@
+@startuml
+|借阅者|
+start
+repeat
+:用户登录;
+	|系统|
+	:查询数据库;
+repeat while (是否登录成功?) is (失败)
+:返回借阅信息;
+|借阅者|
+:显示借阅信息;
+
+stop
+@enduml

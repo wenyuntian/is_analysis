@@ -1,0 +1,20 @@
+@startuml
+|借阅者|
+start
+:查询书籍信息;
+	|系统|
+	if( 能否预定？) then( 能 )
+        if(是否登录成功？) then(否)
+        : 用户登录;
+        else(是)
+        endif
+    :预订成功;
+    else( 不能 )
+    :预订失败;
+    endif
+:返回预订结果;
+|借阅者|
+:显示预订结果;
+
+stop
+@enduml

@@ -1,5 +1,0 @@
-@startuml
-class 游客{
-    +查询书籍()
-}
-@enduml

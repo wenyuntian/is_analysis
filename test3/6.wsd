@@ -1,7 +1,7 @@
 @startuml
 class 管理员{
     String adminID
-    String password
-    +增、删、查、改()
+    String 密码
+    String 姓名
 }
 @enduml

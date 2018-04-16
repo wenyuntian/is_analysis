@@ -3,9 +3,5 @@ class 预订书籍{
     +String  ISBN
     +String  预订人ID
     +Data  预订日期
-    +新增预订信息()
-    +删除预订信息()
-    +更新预订信息()
-    +查询预订信息()
 }
 @enduml

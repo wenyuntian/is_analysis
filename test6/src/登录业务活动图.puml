@@ -1,0 +1,10 @@
+@startuml
+start
+:进入登录界面;
+:输入用户名密码;
+while (账号密码是否正确) is (否)
+  :重修输入账号密码;
+endwhile (是)
+:跳转到首页;
+stop
+@enduml

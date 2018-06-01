@@ -1,0 +1,33 @@
+@startuml
+
+left to right direction
+skinparam packageStyle rectangle
+actor student
+actor teacher
+actor administrator
+User <|-- student
+User <|-- teacher
+
+' 用户用例集
+User --> (查询个人信息)
+User --> (修改个人信息)
+student --> (上传实验)
+student --> (成绩查询)
+teacher --> (创建课程)
+teacher --> (班级管理)
+teacher --> (批改成绩)
+teacher --> (录入成绩)
+teacher --> (修改成绩)
+teacher --> (发布作业)
+User --> (登录)
+User --> (登出)
+
+' 管理员用例集
+administrator --> (系统维护)
+administrator --> (课程信息导入)
+administrator --> (学生信息导入)
+administrator --> (教师账号管理)
+administrator --> (登录)
+administrator --> (登出)
+
+@enduml

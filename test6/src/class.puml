@@ -8,8 +8,7 @@ class users {
     update_date （用户GitHub账号更新时间）
 }
 class administrator {
-    <b>user_id</b> （管理员账号）
-    password （管理员密码）
+    <b>admin_id</b> （管理员账号）
 }
 class teachers{
     <b>teacher_id</b> （教师工号）
@@ -27,6 +26,8 @@ class course{
     name （课程名称）
     class （班级）
 }
+
+users <|- administrator
 users <|- students
 users <|-- teachers
 

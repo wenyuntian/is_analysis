@@ -1,0 +1,13 @@
+@startuml
+title 教师账号管理顺序图
+actor administrator
+administrator -> 教师账号管理窗口: 输入教师工号、姓名、部门
+教师账号管理窗口 -> TEACHERS: 检查该教师是否存在
+alt 该教师已存在
+    TEACHERS->教师账号管理窗口: 返回操作失败信息
+    教师账号管理窗口-> administrator: 提示用户该教师已存在
+else 该教师不存在
+    TEACHERS->教师账号管理窗口: 返回操作成功信息
+    教师账号管理窗口-> administrator: 提示创建账号成功
+end
+@enduml

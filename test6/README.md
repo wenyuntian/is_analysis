@@ -34,7 +34,7 @@
 ## 2. 系统总体结构
 ![](/image/系统总体结构.png)
 
-界面设计参见：https://zwdbox.github.io/is_analysis/test6/ui/index.html
+界面设计参见：[系统分析与设计](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=sBABA279CFC1528100407504)
     
 ## 3. 用例图设计 [源码](src/useCase.puml)
 ![](./image/UseCase.png)
@@ -46,12 +46,18 @@
 - ### [参见数据库设计](./数据库设计.md)
 
 ## 6. 用例及界面详细设计
-- ### ["学生列表"用例](./用例/学生列表.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/index.html)
-- ### [“评定成绩”用例](./用例/评定成绩.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/评定成绩.html)
-- ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/查看成绩.html)
-- ### [“修改密码”用例](./用例/修改密码.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“登出”用例](./用例/登出.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/顶部菜单.html)
-- ### [“登录”用例](./用例/登录.md),[界面](https://zwdbox.github.io/is_analysis/test6/ui/登录.html)
+- ### ["登录"用例](./用例/登录用例.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=s1D4284C5361528102480626)
+- ### [“登出”用例](./用例/登出用例.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=sBABA279CFC1528100407504)
+- ### [“创建课程”用例](./用例/创建课程用例.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=s995E2F50161528112141198)
+- ### [“班级管理”用例](./用例/班级学生管理.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=s363352A1991528119951225)
+- ### [“发布实验”用例](./用例/发布作业用例.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=s166827F3A31528120949553)
+- ### [“查看作业”用例](./用例/查看作业.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=s422ACC944B1528109056765)
+- ### [“录入成绩”用例](./用例/录入成绩.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=sF2122445A71528110829414)
+- ### [“修改成绩”用例](./用例/修改成绩.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=sF2122445A71528110829414)
+- ### [“成绩查询”用例](./用例/成绩查询用例.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=s54831E84E91528107764483)
+- ### [“修改个人信息”用例](./用例/修改个人信息.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=s6285ACACFA1528108323236)
+- ### [“查看个人信息”用例](./用例/查询个人信息.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=s6285ACACFA1528108323236)
+- ### [“教师账号管理”用例](./用例/教师账号管理.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=s45A4FB5CD71528122711874)
+- ### [“修改密码”用例](./用例/修改密码.md)，[界面](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=s263F26B2711528108379620)
+- ### [“学生信息导入”用例](./用例/学生信息导入.md)
     

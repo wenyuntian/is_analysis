@@ -1,0 +1,13 @@
+@startuml
+title 创建课程顺序图
+actor teacher
+teacher-> 创建课程窗口: 输入课程名称
+创建课程窗口-> COURSES: 检查是否有同名课程
+alt 没有同名课程
+    COURSES->创建课程窗口: 创建成功，返回正确消息
+    创建课程窗口-> teacher: 提示用户发布成功
+else 没有同名课程
+    COURSES->创建课程窗口: 创建失败，返回错误消息
+    创建课程窗口-> teacher: 提示用户不能有同名课程
+end 
+@enduml

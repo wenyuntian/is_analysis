@@ -1,0 +1,14 @@
+@startuml
+title 发布作业顺序图
+actor teacher
+->teacher: 课程管理
+teacher-> 发布实验窗口: 输入实验名、要求
+发布实验窗口-> TESTS: 检查是否有同名实验
+alt 没有同名实验
+    TESTS->发布实验窗口: 发布成功，返回正确消息
+    发布实验窗口-> teacher: 提示用户发布成功
+else 没有同名实验
+    TESTS->发布实验窗口: 发布失败，返回错误消息
+    发布实验窗口-> teacher: 提示用户不能有同名实验
+end 
+@enduml

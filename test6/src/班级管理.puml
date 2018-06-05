@@ -1,0 +1,8 @@
+@startuml
+title 班级管理顺序图
+actor teacher
+teacher -> 班级管理窗口: 新增、移除上课班级
+班级管理窗口 -> COURSE: 更新数据库COURSE表数据
+COURSE -> 班级管理窗口: 返回数据更新班级管理数据
+班级管理窗口 -> teacher: 显示更新后管理班级数据
+@enduml

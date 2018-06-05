@@ -1,0 +1,12 @@
+@startuml
+title 录入成绩顺序图
+actor teacher
+teacher-> 录入成绩窗口: 选择要查看的学生
+录入成绩窗口-> github窗口: 跳转到该学生github实验页面
+github窗口 -> teacher: 显示学生完成作业情况
+teacher -> 录入成绩窗口: 输入成绩、评语
+录入成绩窗口 -> 录入成绩窗口: 检查输入格式是否正确
+录入成绩窗口 -> GRADE: 存储到数据库GRADE表
+GRADE -> 录入成绩窗口: 返回录入成绩成功
+录入成绩窗口 ->teacher: 显示学生分数
+@enduml

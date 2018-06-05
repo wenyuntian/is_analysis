@@ -49,6 +49,8 @@ class tests {
 class class {
     <b>class_id</b> （班级ID）
     class_name （班级名称）
+    institute （学院）
+    year （年级）
 }
 
 teachers "1" -- "n"  course

@@ -32,12 +32,12 @@
     3. 教师账号管理
     
 ## 2. 系统总体结构
-![](/image/系统总体结构.png)
+![](./image/系统总体结构.png)
 
 界面设计参见：[系统分析与设计](https://wenyuntian.github.io/is_analysis/test6/UI/#screen=sBABA279CFC1528100407504)
     
 ## 3. 用例图设计 [源码](src/useCase.puml)
-![](./image/UseCase.png)
+![](./image/useCase.png)
 
 ## 4. 类图设计 [源码](src/class.puml)
 ![](./image/class.png)
